@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptHub - Thư Viện Prompt Chuyên Nghiệp</title>
+    <meta name="description" content="PromptHub là thư viện prompt chuyên nghiệp với hàng trăm mẫu prompt cho ChatGPT, Midjourney, Claude và các AI tools khác. Tìm kiếm, lưu trữ và quản lý prompt hiệu quả.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="nav-menu" id="navMenu">
+        <div class="nav-container">
+            <div class="brand-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="#F7C547"/>
+                    <path d="M8 12H24M8 16H24M8 20H18" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>PromptHub</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Trang chủ</a>
+                <a href="#prompts" class="nav-link">Prompts</a>
+                <a href="#categories" class="nav-link">Danh mục</a>
+                <a href="#contributors" class="nav-link">Tác giả</a>
+                <a href="#contact" class="nav-link">Liên hệ</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-blur">Thư Viện Prompt Chuyên Nghiệp</h1>
+            <p class="hero-description animate-blur">Khám phá hàng trăm mẫu prompt được tuyển chọn kỹ lưỡng cho ChatGPT, Claude, Midjourney và nhiều AI tools khác. Tối ưu hóa công việc của bạn với những prompt chất lượng cao.</p>
+            <div class="hero-rating">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <span>4.9/5 từ 2,500+ người dùng</span>
+            </div>
+            <button class="cta-button">Khám phá ngay</button>
+        </div>
+        <div class="hero-bg-decoration"></div>
+    </section>
+
+    <!-- Feature Service Section -->
+    <section class="feature-section" id="categories">
+        <div class="container">
+            <h2 class="section-title">Danh Mục Prompt</h2>
+            <div class="service-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5L25 15H35L27 22L30 32L20 26L10 32L13 22L5 15H15L20 5Z" fill="#F7C547"/>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3>ChatGPT Prompts</h3>
+                        <p>Các prompt tối ưu cho ChatGPT, từ viết content, phân tích dữ liệu đến code generation</p>
+                    </div>
+                </div>
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="5" y="10" width="30" height="20" rx="4" fill="#66FC75"/>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3>Midjourney Prompts</h3>
+                        <p>Prompt chuyên nghiệp cho Midjourney, tạo ra các hình ảnh nghệ thuật độc đáo</p>
+                    </div>
+                </div>
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="15" fill="#F7C547"/>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3>Claude Prompts</h3>
+                        <p>Prompt tối ưu cho Claude AI, phù hợp với các tác vụ phân tích và reasoning phức tạp</p>
+                    </div>
+                </div>
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">💻</div>
+                    <div class="service-content">
+                        <h3>Coding Prompts</h3>
+                        <p>Prompt chuyên dụng cho lập trình, debug, code review và optimization</p>
+                    </div>
+                </div>
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">✍️</div>
+                    <div class="service-content">
+                        <h3>Writing Prompts</h3>
+                        <p>Prompt sáng tạo cho viết lách, content marketing, copywriting chuyên nghiệp</p>
+                    </div>
+                </div>
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">📊</div>
+                    <div class="service-content">
+                        <h3>Business Prompts</h3>
+                        <p>Prompt cho phân tích kinh doanh, chiến lược, marketing và quản lý dự án</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prompts Section -->
+    <section class="prompts-section" id="prompts">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Prompt Nổi Bật</h2>
+                <div class="filter-controls">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm prompt...">
+                    <select id="categoryFilter" class="category-filter">
+                        <option value="all">Tất cả danh mục</option>
+                        <option value="chatgpt">ChatGPT</option>
+                        <option value="midjourney">Midjourney</option>
+                        <option value="claude">Claude</option>
+                        <option value="coding">Coding</option>
+                        <option value="writing">Writing</option>
+                        <option value="business">Business</option>
+                    </select>
+                    <select id="sortFilter" class="sort-filter">
+                        <option value="popular">Phổ biến nhất</option>
+                        <option value="recent">Mới nhất</option>
+                        <option value="rating">Đánh giá cao</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="prompts-grid" id="promptsGrid">
+                <!-- Prompts will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-left animate-on-scroll">
+                    <div class="about-image">
+                        <div class="about-image-placeholder">
+                            <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="#F3F3F3"/>
+                                <path d="M150 100L200 150L250 100M200 150V200" stroke="#F7C547" stroke-width="4" stroke-linecap="round"/>
+                                <text x="200" y="240" text-anchor="middle" fill="#2C2C2C" font-size="16">AI Prompt Library</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-right animate-on-scroll">
+                    <h2 class="section-title">Về PromptHub</h2>
+                    <p class="about-description">PromptHub là nền tảng hàng đầu cung cấp thư viện prompt chuyên nghiệp cho các AI tools phổ biến. Chúng tôi tuyển chọn, tối ưu và chia sẻ những prompt chất lượng cao giúp bạn tận dụng tối đa sức mạnh của AI.</p>
+
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
+                            <h3 class="achievement-number">500+</h3>
+                            <p>Prompts chất lượng</p>
+                        </div>
+                        <div class="achievement-item">
+                            <h3 class="achievement-number">2,500+</h3>
+                            <p>Người dùng hài lòng</p>
+                        </div>
+                        <div class="achievement-item">
+                            <h3 class="achievement-number">50+</h3>
+                            <p>Tác giả đóng góp</p>
+                        </div>
+                        <div class="achievement-item">
+                            <h3 class="achievement-number">98%</h3>
+                            <p>Đánh giá tích cực</p>
+                        </div>
+                    </div>
+
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h4>Sứ mệnh</h4>
+                            <p>Democratize AI access bằng cách cung cấp prompt chất lượng cao miễn phí cho mọi người.</p>
+                        </div>
+                        <div class="vision">
+                            <h4>Tầm nhìn</h4>
+                            <p>Trở thành cộng đồng prompt lớn nhất Việt Nam, nơi mọi người có thể học hỏi và chia sẻ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contributors Section -->
+    <section class="contributors-section" id="contributors">
+        <div class="container">
+            <h2 class="section-title">Tác Giả Nổi Bật</h2>
+            <div class="contributors-ticker" id="contributorsTicker">
+                <!-- Contributors will be dynamically inserted -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Đánh Giá Từ Cộng Đồng</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"PromptHub đã giúp tôi tiết kiệm rất nhiều thời gian trong việc tạo content. Các prompt được tối ưu rất tốt và dễ sử dụng!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">NH</div>
+                        <div class="reviewer-info">
+                            <h4>Nguyễn Hoàng</h4>
+                            <p>Content Creator</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Thư viện prompt coding ở đây cực kỳ hữu ích. Tôi đã cải thiện hiệu suất làm việc với AI lên 3 lần!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">TM</div>
+                        <div class="reviewer-info">
+                            <h4>Trần Minh</h4>
+                            <p>Software Developer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Các prompt Midjourney ở đây rất chuyên nghiệp. Tôi đã tạo được nhiều artwork tuyệt đẹp nhờ vào PromptHub!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">LH</div>
+                        <div class="reviewer-info">
+                            <h4>Lê Hương</h4>
+                            <p>Digital Artist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Interface đơn giản, dễ sử dụng. Tính năng copy nhanh giúp tôi áp dụng prompt ngay lập tức. Highly recommended!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">PD</div>
+                        <div class="reviewer-info">
+                            <h4>Phạm Dũng</h4>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+            <div class="faq-grid">
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>Làm thế nào để sử dụng prompt?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Chỉ cần click vào prompt bạn muốn sử dụng, nhấn nút "Copy" và paste vào AI tool của bạn. Bạn có thể tùy chỉnh prompt theo nhu cầu cụ thể.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>PromptHub có miễn phí không?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Có! Tất cả prompt trên PromptHub đều miễn phí 100%. Chúng tôi tin vào việc chia sẻ kiến thức AI cho cộng đồng.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>Tôi có thể đóng góp prompt không?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Tất nhiên! Chúng tôi luôn chào đón các tác giả đóng góp prompt. Hãy liên hệ qua form bên dưới để trở thành contributor.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>Prompt được cập nhật thường xuyên không?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Thư viện của chúng tôi được cập nhật hàng tuần với những prompt mới nhất và được tối ưu liên tục.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>Làm sao để tìm prompt phù hợp?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Sử dụng tính năng tìm kiếm và bộ lọc theo danh mục. Bạn cũng có thể sắp xếp theo độ phổ biến hoặc đánh giá.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>Prompt có hoạt động với mọi AI tool?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Mỗi prompt được tối ưu cho AI tool cụ thể. Hãy kiểm tra tag của prompt để biết nó phù hợp với tool nào.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-overlay"></div>
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Đóng Góp Prompt</h2>
+                <p class="contact-description">Chia sẻ prompt của bạn với cộng đồng hoặc liên hệ với chúng tôi</p>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="firstName" placeholder="Tên" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="lastName" placeholder="Họ" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Số điện thoại">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select name="category" required>
+                            <option value="">Chọn danh mục prompt</option>
+                            <option value="chatgpt">ChatGPT</option>
+                            <option value="midjourney">Midjourney</option>
+                            <option value="claude">Claude</option>
+                            <option value="coding">Coding</option>
+                            <option value="writing">Writing</option>
+                            <option value="business">Business</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Nội dung prompt hoặc lời nhắn..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Gửi Prompt</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-brand">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="#F7C547"/>
+                            <path d="M8 12H24M8 16H24M8 20H18" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>PromptHub</span>
+                    </div>
+                    <div class="footer-info">
+                        <p>📞 +84 123 456 789</p>
+                        <p>✉️ contact@prompthub.com</p>
+                        <p>📍 Hà Nội, Việt Nam</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">YouTube</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                    <p class="copyright">© 2024 PromptHub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Prompt Detail Modal -->
+    <div class="modal" id="promptModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+    <script src="prompts-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
